@@ -1,0 +1,49 @@
+.todo-list-component {
+	position: relative;
+	flex:1 1 25%;
+	margin:0;
+	padding: 10px;
+	min-height: 350px;
+	
+
+}
+.todo-list-container {
+	position: absolute;
+	margin: 0;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width:80%;
+	height: 90%;
+	border:solid black 1px;
+
+}
+.todo-list-caption {
+	padding:5px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-bottom:solid black 1px;
+	position: relative;
+
+
+}
+.todo-list-list-container {
+	width:85%;
+	padding-left: 10%;
+	overflow: hidden;
+	position: relative;
+}
+
+.todo-list-list {
+	
+}
+.todo-list-item {
+	
+	
+}
+.todo-list-item-move-button {
+	float: right;
+	margin:5px;
+	margin-top: -2px;
+}

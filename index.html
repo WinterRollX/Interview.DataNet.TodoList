@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interview @ DataNet by Winterroll</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mainController.css">
+	<link rel="stylesheet" type="text/css" href="css/todoList.css">
+	<link rel="stylesheet" type="text/css" href="css/newTask.css">
+	
+	
+
+	</style>
+</head>
+
+<body ng-app = 'myTodoList'>
+	<div ng-controller = 'mainController as mainController'>
+		<span>Add New List:</span>
+		<input type="text" ng-model = 'mainController.tempInput'>
+		<input type="button" value="Add" ng-click = 'mainController.onAddList();'>
+		<div class="main-data-control-container">
+			<span class="main-data-control-caption">Data controls:</span>
+			<input class = "main-data-control-button" type="button" value="Load" ng-clcik = 'mainController.loadContent();'>
+			<input class = "main-data-control-button" type="button" value="Save" ng-click = 'mainController.saveContent();'>
+			<input class = "main-data-control-button" type="button" value="Clear data" ng-click = 'mainController.clearData();'>
+		</div>
+		
+		<div class="main-flex-container">
+			<todo-list class = "todo-list-component" ng-repeat = 'list in mainController.todoListList' list-prop = 'list' on-move='mainController.onMoveTask(moveTask);' list-index='$index'></todo-list>
+		</div>
+	</div>
+<script src='mainController.js'></script>
+<script src='todoList.component.js'></script>
+<script src='newTask.component.js'></script>
+
+</body>
+</html>

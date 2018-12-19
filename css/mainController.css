@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+.main-data-control-container {
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.main-data-control-caption {
+	margin-right: 10px;
+}
+.main-data-control-button {
+	margin-right: 8px;
+}
+
+.main-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	min-height: 400px;
+	border: solid black 1px;
+	margin-top: 10px;
+}

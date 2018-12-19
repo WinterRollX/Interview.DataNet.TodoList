@@ -1,0 +1,7 @@
+<div class="new-task-container">
+	<div class="new-task-link"><a href="" ng-click='$ctrl.displayInput();'>New task</a></div>
+	<div ng-if = '$ctrl.displayInputFlag'>
+	<input class ='new-task-text-input' type="text" ng-model = '$ctrl.tempInput'><span ng-if = '$ctrl.showAlertFlag'>Task name can not be empty!</span>
+	<input class ='new-task-add-task-button' type="button" value="Add task" ng-click = '$ctrl.addNewTask();'>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<div class="todo-list-container">
+	
+	<div class="todo-list-caption"> {{$ctrl.listProp.name}}</div>
+	<div class="todo-list-list-container">
+		<div class="todo-list-list--inner-container">
+		<ul class = 'todo-list-item' ng-repeat = 'task in $ctrl.taskList'>
+			<li class = 'todo-list-item' draggable = 'true'><span>{{task.name}}</span>
+				<input class='todo-list-item-move-button' type="button" value=">" ng-click = '$ctrl.onMoveRight($index)'>
+				<input class='todo-list-item-move-button' type="button" value="<" ng-click = '$ctrl.onMoveLeft($index)'>
+				
+			</li>
+			
+		</ul>
+		<p ng-if = "$ctrl.taskList.length == 0">No task added yet.</p>
+		</div>
+	</div>
+	<new-task class="new-task-component" display-input-flag='false' add-task='$ctrl.addTask(task)'></new-task>
+
+
+
+</div>

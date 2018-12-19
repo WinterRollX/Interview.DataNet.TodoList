@@ -1,0 +1,22 @@
+.new-task-component {
+	position: absolute;
+	bottom: 0;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.new-task-container {
+	position: relative;
+}
+.new-task-text-input {
+	width: 100%;
+	float:right;
+	margin-top: 5px;
+	margin-right: 5px;
+
+}
+.new-task-add-task-button {
+	float:right;
+	margin-top: 5px;
+	margin-right: 5px;
+	
+}
